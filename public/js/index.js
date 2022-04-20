@@ -23,7 +23,7 @@ const pendingSeriesParagraph = new TextContentComponent(
   pendingSeriesElement,
   "p",
   "info",
-  "You have watched 4 series"
+  "You have 2 series pending to watch"
 );
 
 const pendingSeriesUl = new TextContentComponent(
@@ -35,5 +35,43 @@ const pendingSeriesUl = new TextContentComponent(
 const pendingSeriesUlElement = document.querySelector(".series-list");
 
 series.forEach((serie) => {
-  const newFilm = new FilmCard(pendingSeriesUlElement, serie);
+  if (serie.watched === false) {
+    const newFilm = new FilmCard(pendingSeriesUlElement, serie);
+  }
 });
+
+/* const watchedSeries = new Component(
+  seriesParentElement,
+  "section",
+  "series-watched"
+);
+const watchedSeriesElement = document.querySelector(".series-watched");
+const watchedSeriesTitle = new TextContentComponent(
+  watchedSeriesElement,
+  "h3",
+  "subsection-title",
+  "Watched series"
+);
+
+const watchedSeriesParagraph = new TextContentComponent(
+  watchedSeriesElement,
+  "p",
+  "info",
+  "You have watched 3 series"
+);
+
+const watchedSeriesUl = new TextContentComponent(
+  watchedSeriesElement,
+  "ul",
+  "series-list series-list--watched"
+);
+
+const watchedSeriesUlElement = document.querySelector(
+  ".series-list series-list--watched"
+);
+
+series.forEach((serie) => {
+  if (serie.watched === true) {
+    const newFilmWatched = new FilmCard(watchedSeriesUlElement, serie);
+  }
+}); */
