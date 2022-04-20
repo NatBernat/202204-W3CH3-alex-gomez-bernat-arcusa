@@ -20,6 +20,9 @@ class FilmCard extends Component {
       <h4 class="serie__title">${this.serie.name}</h4>
       <p class="serie__info">${this.serie.creator} (${this.serie.year})</p>
       <ul class="score">
+      ${
+        this.serie.watched
+          ? `
         <li class="score__star">
           <i class="icon--score fas fa-star" title="1/5"></i>
         </li>
@@ -35,6 +38,9 @@ class FilmCard extends Component {
         <li class="score__star">
           <i class="icon--score fas fa-star" title="5/5"></i>
         </li>
+        `
+          : ""
+      }
       </ul>
       <i class="fas fa-times-circle icon--delete"></i>
     `;

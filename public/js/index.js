@@ -40,7 +40,7 @@ series.forEach((serie) => {
   }
 });
 
-/* const watchedSeries = new Component(
+const watchedSeries = new Component(
   seriesParentElement,
   "section",
   "series-watched"
@@ -66,12 +66,10 @@ const watchedSeriesUl = new TextContentComponent(
   "series-list series-list--watched"
 );
 
-const watchedSeriesUlElement = document.querySelector(
-  ".series-list series-list--watched"
-);
+const watchedSeriesUlElement = document.querySelector(".series-list--watched");
 
 series.forEach((serie) => {
-  if (serie.watched === true) {
+  if (serie.watched) {
     const newFilmWatched = new FilmCard(watchedSeriesUlElement, serie);
   }
-}); */
+});
