@@ -7,8 +7,7 @@ class FilmCard extends Component {
   }
 
   render() {
-    this.element.innerHTML = `
-       <li class="serie">
+    this.element.innerHTML = `<li class="serie">
                 <img
                   class="serie__poster"
                   src="https://m.media-amazon.com/images/M/MV5BZGJjYzhjYTYtMDBjYy00OWU1LTg5OTYtNmYwOTZmZjE3ZDdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
