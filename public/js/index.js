@@ -26,14 +26,14 @@ const pendingSeriesParagraph = new TextContentComponent(
   "You have watched 4 series"
 );
 
-const pendingSeriesLi = new TextContentComponent(
+const pendingSeriesUl = new TextContentComponent(
   pendingSeriesElement,
   "ul",
   "series-list"
 );
 
-const pendingSeriesUl = document.querySelector(".series-list");
+const pendingSeriesUlElement = document.querySelector(".series-list");
 
 series.forEach((serie) => {
-  const newFilm = new FilmCard(pendingSeriesUl);
+  const newFilm = new FilmCard(pendingSeriesUlElement, serie);
 });
