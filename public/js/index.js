@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import series from "./series.js";
 import Component from "./components/Component.js";
 
