@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import series from "./series.js";
 import Component from "./components/Component/Component.js";
-import FilmCard from "./components/FilmCard.js";
+import FilmCard from "./components/FilmCard/FilmCard.js";
 import TextContentComponent from "./components/TextContentComponent/TextContentComponent.js";
 
 const seriesParentElement = document.querySelector(".series");
