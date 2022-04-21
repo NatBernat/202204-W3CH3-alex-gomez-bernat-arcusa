@@ -34,10 +34,9 @@ const pendingSeriesUl = new TextContentComponent(
 
 const pendingSeriesUlElement = document.querySelector(".series-list");
 
-let newFilm = -1;
 series.forEach((serie) => {
   if (serie.watched === false) {
-    newFilm = new FilmCard(pendingSeriesUlElement, serie);
+    new FilmCard(pendingSeriesUlElement, serie);
   }
 });
 
@@ -68,10 +67,9 @@ const watchedSeriesUl = new TextContentComponent(
 );
 
 const watchedSeriesUlElement = document.querySelector(".series-list--watched");
-let newFilmWatched = -1;
 
 series.forEach((serie) => {
   if (serie.watched) {
-    newFilmWatched = new FilmCard(watchedSeriesUlElement, serie);
+    new FilmCard(watchedSeriesUlElement, serie);
   }
 });
