@@ -1,14 +1,23 @@
 import Component from "./Component.js";
 
 describe("Given a Component component", () => {
-  describe("When it is instantiated", () => {
-    test("Then it should create an object", () => {
-      const container = document.createElement("div");
-
+  describe("When instantiated", () => {
+    let container;
+    beforeEach(() => {
+      container = document.createElement("div");
+    });
+    test("Then it should create a p tag inside the div container", () => {
       new Component(container, "p", "");
-      const result = container.querySelector("p");
+      const resultTag = container.querySelector("p");
 
-      expect(result).not.toBeNull();
+      expect(resultTag).not.toBeNull();
+    });
+
+    test("Then it should create a p tag with 'paragraph className", () => {
+      new Component(container, "p", "paragraph");
+      const resultClass = container.querySelector(".paragraph");
+
+      expect(resultClass).not.toBeNull();
     });
   });
 });
