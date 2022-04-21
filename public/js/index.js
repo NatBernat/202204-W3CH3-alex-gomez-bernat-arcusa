@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import series from "./series.js";
-import Component from "./components/Component.js";
+import Component from "./components/Component/Component.js";
 import TextContentComponent from "./components/TextContentComponent.js";
 import FilmCard from "./components/FilmCard.js";
 
