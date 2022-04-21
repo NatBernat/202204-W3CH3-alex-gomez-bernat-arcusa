@@ -2,7 +2,7 @@
 import series from "./series.js";
 import Component from "./components/Component/Component.js";
 import TextContentComponent from "./components/TextContentComponent.js";
-import FilmCard from "./components/FilmCard.js";
+import FilmCard from "./components/FilmCard/FilmCard.js";
 
 const seriesParentElement = document.querySelector(".series");
 
